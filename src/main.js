@@ -26,6 +26,7 @@ SOFTWARE.
 import Vue from "vue";
 import App from "./App.vue";
 import VueSocketio from "vue-socket.io";
+import Vue2TouchEvents from 'vue2-touch-events'
 // import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
@@ -70,6 +71,8 @@ Vue.use(
     },
   })
 );
+
+Vue.use(Vue2TouchEvents)
 
 Vue.use(require("vue-moment"), {
   moment,
